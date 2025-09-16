@@ -1,0 +1,203 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFBE7;
+  color: #2b2b2b;
+}
+
+/* ======== MENÚ ======== */
+nav {
+  background: #fff;
+  padding: 10px;
+  text-align: right;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #5B4636;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2E7D32;
+}
+
+/* ======== FORMULARIO ======== */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 50px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #bdb76b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a89f5d;
+}
+/* ======== ESTILOS GENERALES ======== */
+body {
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFBE7;
+  color: #2b2b2b;
+}
+
+header {
+  background-color: #BDB76B;
+  color: #3D2C2E;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+nav {
+  background: #fff;
+  padding: 10px;
+  text-align: right; /* 👉 menú a la derecha */
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #5B4636;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2E7D32;
+}
+
+/* ======== TARJETAS / CONTENEDORES ======== */
+.intro {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.intro p {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.card h2 {
+  color: #2E7D32;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* ======== FORMULARIO ======== */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 50px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #bdb76b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a89f5d;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #A6B37D;
+  color: #fff;
+  margin-top: 20px;
+}

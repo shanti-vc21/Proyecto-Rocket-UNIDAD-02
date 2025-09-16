@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perritos Interactivos</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+<nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="registro.html">Registro</a>
+    <a href="equipo.html">Nuestro Equipo</a>
+    <a href="mision-vision.html">Misión y Visión</a>
+    <a href="ayudar.html">Cómo Ayudar</a>
+     <a href="adopciones.html">Adopciones</a>
+  </nav>  
+</head>
+<body>
+  <h1>🐶 Conoce a los Perritos</h1>
+
+  <div class="contenedor">
+    <div class="perrito" onclick="mostrarInfo('Luna')">
+      <img src="https://placedog.net/400/400?id=1" alt="Perrito 1">
+    </div>
+    <div class="perrito" onclick="mostrarInfo('Max')">
+      <img src="https://placedog.net/400/400?id=2" alt="Perrito 2">
+    </div>
+    <div class="perrito" onclick="mostrarInfo('Rocky')">
+      <img src="https://placedog.net/400/400?id=3" alt="Perrito 3">
+    </div>
+    <div class="perrito" onclick="mostrarInfo('Bella')">
+      <img src="https://placedog.net/400/400?id=4" alt="Perrito 4">
+    </div>
+  </div>
+
+  <div class="info" id="infoPerrito">
+    <h2></h2>
+    <p></p>
+  </div>
+
+  <script src="JS/script.js"></script>
+  <footer>
+    <p>© 2025 Plataforma Contra el Abandono</p>
+  </footer>
+</body>
+</html>

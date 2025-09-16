@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <nav> 
+    <a href="inicio.html">Inicio</a>
+    <a href="registro.html">Registro</a>
+    <a href="equipo.html">Nuestro Equipo</a>
+    <a href="mision-vision.html">Misión y Visión</a>
+    <a href="ayudar.html">Cómo Ayudar</a>
+     <a href="adopciones.html">Adopciones</a>
+  </nav>
+
+  <form>
+    <h2>Registro</h2>
+    <label>Nombre</label>
+    <input type="text" required>
+    <label>Apellido</label>
+    <input type="text" required>
+    <label>Correo electrónico</label>
+    <input type="email" required>
+    <label>Contraseña</label>
+    <input type="password" minlength="8" required>
+    <label>Fecha de nacimiento</label>
+    <input type="date" required>
+    <label for="genero">Género</label>
+    <select id="genero" required>
+      <option value="">Selecciona</option>
+      <option value="femenino">Femenino</option>
+      <option value="masculino">Masculino</option>
+      <option value="otro">Otro</option>
+    </select>
+    <button type="submit">Registrarse</button>
+  </form>
+  <footer>
+    <p>© 2025 Plataforma Contra el Abandono</p>
+  </footer>
+</body>
+</html>
