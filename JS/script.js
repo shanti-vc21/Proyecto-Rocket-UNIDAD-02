@@ -1,51 +1,33 @@
-const perritos = {
-  Luna: {
-    nombre: "Luna",
-    edad: "2 años",
-    raza: "Labrador",
-    descripcion: "Juguetona, le encantan las pelotas y correr en el parque."
-  },
-  Max: {
-    nombre: "Max",
-    edad: "4 años",
-    raza: "Beagle",
-    descripcion: "Curioso y siempre con la nariz en el suelo buscando aventuras."
-  },
-  Rocky: {
-    nombre: "Rocky",
-    edad: "3 años",
-    raza: "Bulldog Francés",
-    descripcion: "Tranquilo y cariñoso, le encanta dormir la siesta."
-  },
-  Bella: {
-    nombre: "Bella",
-    edad: "1 año",
-    raza: "Golden Retriever",
-    descripcion: "Muy dulce y sociable, se lleva bien con todos los perritos."
-  }
-};
+function mostrarInfo(nombre) {
+  let titulo = document.querySelector("#infoPerrito div h2");
+  let texto = document.querySelector("#infoPerrito div p");
+
+  let perrito = {
+    "Luna y Scott": "🐶 Luna y Scott son dos perritos tranquilos y cariñosos, les encanta dormir la siesta.",
+    "Max y Marshall": "🐶 Max y Marshall son dos perritos juguetones, les encantan las pelotas y correr en el parque.",
+    "Bella": "🐶 Bella es una perrita dulce que le encanta jugar con sus amigos.",
+    "Rocky": "🐶 Rocky es un perrito tranquilo que disfruta de las siestas."
+  };
+
+  titulo.textContent = nombre;
+  texto.textContent = perrito[nombre];
+  document.getElementById("infoPerrito").style.display = "block";
+}
+
+
 
 function mostrarInfo(nombre) {
-  const perrito = perritos[nombre];
-  const infoDiv = document.getElementById("infoPerrito");
-  infoDiv.style.display = "block";
-  infoDiv.querySelector("h2").textContent = perrito.nombre;
-  infoDiv.querySelector("p").innerHTML = `
-    🐾 Edad: ${perrito.edad}<br>
-    🐾 Raza: ${perrito.raza}<br>
-    🐾 ${perrito.descripcion}
-  `;
-}
-function cerrarInfo() {
-  document.getElementById("infoPerrito").style.display = "none";
-}
-document.getElementById("cerrarBtn").addEventListener("click", cerrarInfo);
-document.getElementById("cerrarBtn2").addEventListener("click", cerrarInfo);
-document.getElementById("cerrarBtn3").addEventListener("click", cerrarInfo);
-document.getElementById("cerrarBtn4").addEventListener("click", cerrarInfo);
+  let titulo = document.querySelector("#infoGatito h2");
+  let texto = document.querySelector("#infoGatito p");
 
-var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+  let gatitos = {
+    "Lia": "🐱 Lia es una gatita juguetona que ama descubrir cosas nuevas.",
+    "Tob": "🐱 Tob es muy tranquilo y siempre estará para ti.",
+    "Lumi": "🐱 Lumi es inquieto pero muy cariñoso con los niños.",
+    "Linda": "🐱 Linda es dulce, tranquila y adora dormir en el sofá."
+  };
+
+  titulo.textContent = nombre;
+  texto.textContent = gatitos[nombre];
+  document.getElementById("infoGatito").style.display = "block";
 }
