@@ -3,43 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perritos Interactivos</title>
   <link rel="stylesheet" href="CSS/styles.css">
-<nav>
+  <title>Perritos y Gatitos Interactivos</title>
+</head>
+<nav> 
     <a href="inicio.html">Inicio</a>
     <a href="registro.html">Registro</a>
     <a href="equipo.html">Nuestro Equipo</a>
     <a href="mision-vision.html">Misión y Visión</a>
     <a href="ayudar.html">Cómo Ayudar</a>
-     <a href="adopciones.html">Adopciones</a>
-  </nav>  
-</head>
+    <a href="adopciones.html">Adopciones</a>
+  </nav>
 <body>
-  <h1>🐶 Conoce a los Perritos</h1>
-
-  <div class="contenedor">
-    <div class="perrito" onclick="mostrarInfo('Luna')">
-      <img src="https://placedog.net/400/400?id=1" alt="Perrito 1">
+  <h1>🐶 Conoce y adopta algunos de los perritos y gatitos</h1>
+  <div>
+    <div onclick="mostrarInfo('Luna y Scott', '🐶 Luna y Scott son dos perritos tranquilos y cariñosos, les encanta dormir la siesta.')">
+      <img src="https://placedog.net/400/400?id=1" alt="Perrito 1" width="150">
     </div>
-    <div class="perrito" onclick="mostrarInfo('Max')">
-      <img src="https://placedog.net/400/400?id=2" alt="Perrito 2">
+    <div onclick="mostrarInfo('Max y Marshall', '🐶 Max y Marshall son dos perritos fieles y protectores, les gusta dormir a tu lado.')">
+      <img src="https://placedog.net/400/400?id=2" alt="Perrito 2" width="150">
     </div>
-    <div class="perrito" onclick="mostrarInfo('Rocky')">
-      <img src="https://placedog.net/400/400?id=3" alt="Perrito 3">
+    <div onclick="mostrarInfo('Rocky', '🐶 Rocky es un perrito juguetón que adora correr tras la pelota.')">
+      <img src="https://placedog.net/400/400?id=3" alt="Perrito 3" width="150">
     </div>
-    <div class="perrito" onclick="mostrarInfo('Bella')">
-      <img src="https://placedog.net/400/400?id=4" alt="Perrito 4">
+    <div onclick="mostrarInfo('Bella', '🐶 Bella es muy tierna y tranquila, ideal para dar abrazos.')">
+      <img src="https://placedog.net/400/400?id=4" alt="Perrito 4" width="150">
+    </div>
+  </div>
+  <div>
+    <div onclick="mostrarInfo('Lia', '🐱 Una gatita curiosa que ama dormir en cajas pequeñas.')">
+      <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Gatito 1" width="150">
+    </div>
+    <div onclick="mostrarInfo('Tob', '🐱 Travieso y adorable, le gusta esconderse debajo de la cama.')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="Gatito 2" width="150">
+    </div>
+    <div onclick="mostrarInfo('Lumi', '🐱 Le gusta observar por la ventana y cazar insectos.')">
+      <img src="https://i.pinimg.com/236x/8f/45/68/8f45683162abc40ab932dbde6c1a6673.jpg" alt="Gatito 3" width="150">
+    </div>
+    <div onclick="mostrarInfo('Linda', '🐱 Muy cariñosa, siempre ronronea cuando la acarician.')">
+      <img src="https://i.pinimg.com/736x/6b/d7/eb/6bd7eba02da570bfa887d164a911c42f.jpg" alt="Gatito 4" width="150">
     </div>
   </div>
 
-  <div class="info" id="infoPerrito">
-    <h2></h2>
-    <p></p>
+  <div id="infoAnimal">
+    <h2>Haz clic en un perrito o gatito</h2>
+    <p>Aquí aparecerá la información 🐾</p>
   </div>
-
-  <script src="JS/script.js"></script>
-  <footer>
-    <p>© 2025 Plataforma Contra el Abandono</p>
-  </footer>
+<script src="JS/scripts.js"></script>
+  <script>
+    function mostrarInfo(nombre, descripcion) {
+      const infoDiv = document.getElementById("infoAnimal");
+      infoDiv.innerHTML = "<h2>" + nombre + "</h2><p>" + descripcion + "</p>";
+    }
+  </script>
+  
 </body>
 </html>
